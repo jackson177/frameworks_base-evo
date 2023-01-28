@@ -90,17 +90,17 @@ public class FeatureFlagUtils {
         DEFAULT_FLAGS.put("settings_audio_switcher", "true");
         DEFAULT_FLAGS.put("settings_systemui_theme", "true");
         DEFAULT_FLAGS.put(HEARING_AID_SETTINGS, "false");
-        DEFAULT_FLAGS.put("settings_wifi_details_datausage_header", "false");
+        DEFAULT_FLAGS.put("settings_wifi_details_datausage_header", "true");
         DEFAULT_FLAGS.put("settings_skip_direction_mutable", "true");
         DEFAULT_FLAGS.put(SETTINGS_WIFITRACKER2, "true");
         DEFAULT_FLAGS.put("settings_controller_loading_enhancement", "true");
-        DEFAULT_FLAGS.put("settings_conditionals", "false");
+        DEFAULT_FLAGS.put("settings_conditionals", "true");
         // This flags guards a feature introduced in R and will be removed in the next release
         // (b/148367230).
         DEFAULT_FLAGS.put(SETTINGS_DO_NOT_RESTORE_PRESERVED, "true");
 
-        DEFAULT_FLAGS.put("settings_tether_all_in_one", "false");
-        DEFAULT_FLAGS.put("settings_contextual_home", "false");
+        DEFAULT_FLAGS.put("settings_tether_all_in_one", "true");
+        DEFAULT_FLAGS.put("settings_contextual_home", "true");
         DEFAULT_FLAGS.put(SETTINGS_USE_NEW_BACKUP_ELIGIBILITY_RULES, "true");
         DEFAULT_FLAGS.put(SETTINGS_ENABLE_SECURITY_HUB, "true");
         DEFAULT_FLAGS.put(SETTINGS_SUPPORT_LARGE_SCREEN, "true");
