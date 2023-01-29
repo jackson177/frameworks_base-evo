@@ -2361,16 +2361,6 @@
                          String.format("Camera id %s has torch status changed to 0x%x", id, status));
              }
  
-             /* Force to ignore the aux or composite camera torch status update
-              * if the package name does not falls in this bucket
-              */
-             boolean exposeAuxCamera = Camera.shouldExposeAuxCamera();
-             if (!validTorchStatus(status)) {
-                 Log.e(TAG, String.format("Ignoring invalid device %s torch status 0x%x", id,
-                                 status));
-                 return;
-             }
- 
              Integer oldStatus = mTorchStatus.put(id, status);
              if (oldStatus != null && oldStatus == status) {
                  if (DEBUG) {
